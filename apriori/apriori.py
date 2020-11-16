@@ -34,7 +34,7 @@ def find_rule(d, support, confidence, ms = u'--'):
     	support_series = support_series.append(support_series_2)
     	column2 = []
     	
-    	for i in column: #遍历可能的推理，如{A,B,C}究竟是A+B-->C还是B+C-->A还是C+A-->B？
+    	for i in column: #遍历可能的推理，如{A,B,C}究竟是A+B-->C还是B+C-->A还是C+A-->B？ 
     	    i = i.split(ms)
     	    for j in range(len(i)):
     		    column2.append(i[:j]+i[j+1:]+i[j:j+1])
